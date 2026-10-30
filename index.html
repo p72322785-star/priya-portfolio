@@ -4,93 +4,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priya | Tech Superpower Portfolio</title>
+    <meta name="description" content="Priya's developer portfolio showcasing software projects, technical skills and creative work.">
+    <title>Priya Verma | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <h2>Priya<span>.</span></h2>
-    <div>
-        <a href="#home">Home</a>
+<header class="navbar">
+    <a href="#home" class="logo">PV<span>.</span></a>
+
+    <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#superpower">Superpower</a>
+        <a href="#contact" class="nav-contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">COMPUTER SCIENCE ENGINEERING STUDENT</p>
+
+        <h1>Building thoughtful<br>solutions through <span>code.</span></h1>
+
+        <p class="hero-description">
+            Hi, I'm Priya. I enjoy exploring technology, solving problems
+            and turning ideas into useful digital experiences.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="primary-btn">Explore my work</a>
+            <a href="#about" class="secondary-btn">More about me ↗</a>
+        </div>
+
+        <div class="availability">
+            <span class="status-dot"></span>
+            Open to learning and opportunities
+        </div>
     </div>
-</nav>
 
-<section id="home" class="hero">
-    <p class="tag">WELCOME TO MY DIGITAL WORLD</p>
-    <h1>Hi, I'm Priya 👋</h1>
-    <h2>Building Ideas Into <span>Reality.</span></h2>
-    <p>Computer Science Engineering Student | Aspiring Software Developer</p>
-    <a href="#projects" class="btn">Explore My Work</a>
-    <a href="#superpower" class="hint">✨ Psst... Discover my hidden superpower ↓</a>
-</section>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>I'm Priya, a Computer Science Engineering student passionate about technology, programming and building creative solutions. I love learning new technologies and turning ideas into working projects.</p>
-</section>
-
-<section id="skills">
-    <h2>My Tech Superpowers</h2>
-    <div class="cards">
-        <div class="card">💻 HTML & CSS</div>
-        <div class="card">⚡ JavaScript</div>
-        <div class="card">☕ Java</div>
-        <div class="card">🐍 Python</div>
-        <div class="card">🗄️ SQL</div>
-        <div class="card">☁️ AWS</div>
-        <div class="card">🔧 Git & GitHub</div>
+    <div class="hero-side">
+        <div class="initial-card">PV</div>
+        <p>Curiosity → Learning → Building</p>
+        <span>Based in India</span>
     </div>
 </section>
 
-<section id="projects">
-    <h2>My Projects</h2>
-    <div class="cards">
-        <div class="card">
+<section class="section about" id="about">
+    <p class="eyebrow">01 / ABOUT ME</p>
+    <h2>A little about me.</h2>
+
+    <p class="section-description">
+        I'm a Computer Science Engineering student at GLA University.
+        I'm interested in software development, cloud computing and
+        artificial intelligence. I enjoy learning by building projects
+        and experimenting with new technologies.
+    </p>
+
+    <p class="section-description">
+        For me, every project is an opportunity to understand something
+        new, improve my problem-solving skills and create something useful.
+    </p>
+</section>
+
+<section class="section" id="skills">
+    <p class="eyebrow">02 / TECHNICAL SKILLS</p>
+    <h2>Tools I work with.</h2>
+
+    <div class="skills-grid">
+        <div class="skill-item">
+            <span>01</span>
+            <h3>Programming</h3>
+            <p>Java, Python, JavaScript, C</p>
+        </div>
+
+        <div class="skill-item">
+            <span>02</span>
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript, React</p>
+        </div>
+
+        <div class="skill-item">
+            <span>03</span>
+            <h3>Database</h3>
+            <p>SQL, Relational Databases</p>
+        </div>
+
+        <div class="skill-item">
+            <span>04</span>
+            <h3>Cloud & Tools</h3>
+            <p>AWS, Git, GitHub, VS Code</p>
+        </div>
+    </div>
+</section>
+
+<section class="section projects" id="projects">
+    <p class="eyebrow">03 / SELECTED WORK</p>
+    <h2>Things I've built.</h2>
+
+    <div class="project-grid">
+
+        <article class="project-card">
+            <p class="project-number">PROJECT 01</p>
             <h3>StudyMate AI</h3>
-            <p>An AI-powered notes assistant that answers questions from uploaded PDFs.</p>
-        </div>
-        <div class="card">
+            <p>
+                A notes-based learning assistant that allows users
+                to upload PDF documents and ask questions about
+                their study material.
+            </p>
+            <div class="tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>AI</span>
+            </div>
+            <a href="https://github.com/p72322785-star" target="_blank">
+                View GitHub ↗
+            </a>
+        </article>
+
+        <article class="project-card">
+            <p class="project-number">PROJECT 02</p>
             <h3>TravelNest</h3>
-            <p>A smart travel planning platform for discovering destinations and packages.</p>
-        </div>
-        <div class="card">
+            <p>
+                A travel planning platform designed to help users
+                explore destinations, discover packages and plan
+                their next journey.
+            </p>
+            <div class="tags">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+            </div>
+            <a href="https://github.com/p72322785-star/travelnest" target="_blank">
+                View GitHub ↗
+            </a>
+        </article>
+
+        <article class="project-card">
+            <p class="project-number">PROJECT 03</p>
             <h3>CloudPilot AI</h3>
-            <p>An intelligent deployment-readiness decision assistant using AWS and Strands.</p>
-        </div>
+            <p>
+                An exploration of intelligent deployment-readiness
+                decisions using AWS and Strands.
+            </p>
+            <div class="tags">
+                <span>Python</span>
+                <span>AWS</span>
+                <span>Strands</span>
+            </div>
+            <a href="https://github.com/p72322785-star" target="_blank">
+                View GitHub ↗
+            </a>
+        </article>
+
     </div>
 </section>
 
-<section id="superpower">
-    <h2>🎁 Superpower Vending Machine</h2>
-    <p>Curious about what makes me different? Press the button!</p>
+<section class="section superpower" id="superpower">
+    <p class="eyebrow">04 / SOMETHING DIFFERENT</p>
+    <h2>Curiosity has its rewards.</h2>
+
+    <p class="section-description">
+        Everyone has a superpower. Mine is a willingness to keep learning.
+        Explore the machine to discover a few things about me.
+    </p>
+
     <div class="machine">
-        <div id="reveal">✨ Your surprise is waiting...</div>
-        <button class="btn" onclick="revealPower()">REVEAL MY SUPERPOWER</button>
+        <div class="machine-screen">
+            <p id="machine-label">YOUR NEXT DISCOVERY</p>
+            <h3 id="reveal">Ready to explore?</h3>
+        </div>
+
+        <button id="reveal-btn" class="primary-btn" onclick="revealPower()">
+            Discover a superpower ↗
+        </button>
+
+        <p class="machine-hint">Hint: Try the button more than once.</p>
     </div>
-    <p id="hint">💡 Hint: Every click unlocks a new discovery!</p>
 </section>
+
+<section class="section contact" id="contact">
+    <p class="eyebrow">05 / GET IN TOUCH</p>
+    <h2>Let's connect.</h2>
+
+    <p class="section-description">
+        Interested in technology, projects or opportunities?
+        I'd be happy to connect and learn from new experiences.
+    </p>
+
+    <div class="contact-links">
+        <a href="https://github.com/p72322785-star" target="_blank">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/priya-verma-mathura/" target="_blank">LinkedIn ↗</a>
+        <a href="mailto:YOUR_EMAIL@example.com">Email ↗</a>
+    </div>
+</section>
+
+</main>
 
 <footer>
-    <p>Designed & Built with ❤️ by Priya | 2026</p>
+    <p>© 2026 Priya Verma. Designed and developed with care.</p>
+    <a href="#home">Back to top ↑</a>
 </footer>
 
 <script>
 const powers = [
-    "🚀 I turn ideas into real working projects!",
-    "🧠 Learning new technologies is my superpower.",
-    "💻 I love solving problems through code.",
-    "☁️ Exploring the world of AWS and Cloud Computing!",
-    "✨ I believe every bug is a new learning opportunity.",
-    "🔥 My biggest superpower is never giving up!"
+    {
+        title: "A builder's mindset",
+        description: "I enjoy turning ideas into working projects."
+    },
+    {
+        title: "Always learning",
+        description: "Every new technology is another opportunity to grow."
+    },
+    {
+        title: "Problem solver",
+        description: "I see challenges as opportunities to find better solutions."
+    },
+    {
+        title: "Cloud explorer",
+        description: "I'm exploring AWS and the possibilities of cloud computing."
+    },
+    {
+        title: "Curiosity",
+        description: "I believe asking questions is the beginning of innovation."
+    },
+    {
+        title: "Persistence",
+        description: "Debugging, learning and trying again is part of my journey."
+    }
 ];
 
+let previousPower = -1;
+
 function revealPower() {
-    const random = Math.floor(Math.random() * powers.length);
-    document.getElementById("reveal").textContent = powers[random];
+    let random;
+
+    do {
+        random = Math.floor(Math.random() * powers.length);
+    } while (random === previousPower);
+
+    previousPower = random;
+
+    document.getElementById("machine-label").textContent =
+        "DISCOVERY " + (random + 1);
+
+    document.getElementById("reveal").textContent =
+        powers[random].title;
+
+    document.getElementById("machine-label").nextElementSibling
+        .textContent = powers[random].description;
 }
 </script>
 
