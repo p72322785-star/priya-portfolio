@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya | Tech Superpower Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>Priya<span>.</span></h2>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <p class="tag">WELCOME TO MY DIGITAL WORLD</p>
+    <h1>Hi, I'm Priya 👋</h1>
+    <h2>Building Ideas Into <span>Reality.</span></h2>
+    <p>Computer Science Engineering Student | Aspiring Software Developer</p>
+    <a href="#projects" class="btn">Explore My Work</a>
+    <a href="#superpower" class="hint">✨ Psst... Discover my hidden superpower ↓</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm Priya, a Computer Science Engineering student passionate about technology, programming and building creative solutions. I love learning new technologies and turning ideas into working projects.</p>
+</section>
+
+<section id="skills">
+    <h2>My Tech Superpowers</h2>
+    <div class="cards">
+        <div class="card">💻 HTML & CSS</div>
+        <div class="card">⚡ JavaScript</div>
+        <div class="card">☕ Java</div>
+        <div class="card">🐍 Python</div>
+        <div class="card">🗄️ SQL</div>
+        <div class="card">☁️ AWS</div>
+        <div class="card">🔧 Git & GitHub</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>StudyMate AI</h3>
+            <p>An AI-powered notes assistant that answers questions from uploaded PDFs.</p>
+        </div>
+        <div class="card">
+            <h3>TravelNest</h3>
+            <p>A smart travel planning platform for discovering destinations and packages.</p>
+        </div>
+        <div class="card">
+            <h3>CloudPilot AI</h3>
+            <p>An intelligent deployment-readiness decision assistant using AWS and Strands.</p>
+        </div>
+    </div>
+</section>
+
+<section id="superpower">
+    <h2>🎁 Superpower Vending Machine</h2>
+    <p>Curious about what makes me different? Press the button!</p>
+    <div class="machine">
+        <div id="reveal">✨ Your surprise is waiting...</div>
+        <button class="btn" onclick="revealPower()">REVEAL MY SUPERPOWER</button>
+    </div>
+    <p id="hint">💡 Hint: Every click unlocks a new discovery!</p>
+</section>
+
+<footer>
+    <p>Designed & Built with ❤️ by Priya | 2026</p>
+</footer>
+
+<script>
+const powers = [
+    "🚀 I turn ideas into real working projects!",
+    "🧠 Learning new technologies is my superpower.",
+    "💻 I love solving problems through code.",
+    "☁️ Exploring the world of AWS and Cloud Computing!",
+    "✨ I believe every bug is a new learning opportunity.",
+    "🔥 My biggest superpower is never giving up!"
+];
+
+function revealPower() {
+    const random = Math.floor(Math.random() * powers.length);
+    document.getElementById("reveal").textContent = powers[random];
+}
+</script>
+
+</body>
+</html>
